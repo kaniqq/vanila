@@ -1,0 +1,8 @@
+# デフォルトの無視ファイル
+/shelf/
+/workspace.xml
+# データソースのローカルストレージがファイルを無視しました
+/../../../../../../../../:\Users\kaniq\OneDrive\ドキュメント\program\vanilla\.idea/dataSources/
+/dataSources.local.xml
+# エディターベースの HTTP クライアントリクエスト
+/httpRequests/
