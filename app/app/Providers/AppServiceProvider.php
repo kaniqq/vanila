@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
         app()->singleton(item::class, function ($app) {
             return new item(100);
         });
+        
     }
 
     /**
