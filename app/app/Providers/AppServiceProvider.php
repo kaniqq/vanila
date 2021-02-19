@@ -15,13 +15,18 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         app()->singleton(animal::class, function ($app) {
-            return new animal('male');
+            if (config('database.gender') === 'female') {
+                return new animal('female');
+            }else{
+                return new animal('male');
+            }
+
         });
 
         app()->singleton(item::class, function ($app) {
             return new item(100);
         });
-        
+
     }
 
     /**

@@ -13,7 +13,7 @@ class AnimalController extends Controller
     {
 //        $animal = new animal('male');
 
-        dd($animal->dog('won'));
+        dd($animal->dog('wan'));
 //        dd($item->item('wood'));
     }
 }

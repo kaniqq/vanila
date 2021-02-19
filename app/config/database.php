@@ -4,6 +4,9 @@ use Illuminate\Support\Str;
 
 return [
 
+
+    'gender' => env('GENDER'),
+
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
