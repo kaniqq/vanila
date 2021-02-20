@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
         app()->singleton(animal::class, function ($app) {
             if (config('database.gender') === 'female') {
                 return new animal('female');
-            }else{
+            } else {
                 return new animal('male');
             }
 
