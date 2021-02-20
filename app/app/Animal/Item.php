@@ -1,6 +1,6 @@
 <?php
 
-namespace App\animal;
+namespace App\Animal;
 
 class item
 {

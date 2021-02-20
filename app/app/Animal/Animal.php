@@ -1,8 +1,8 @@
 <?php
 
-namespace App\animal;
+namespace App\Animal;
 
-class animal
+class Animal implements AnimalContract
 {
 
     private $gender;

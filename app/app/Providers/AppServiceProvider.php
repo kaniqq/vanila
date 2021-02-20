@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Providers;
-use App\animal\animal;
-use App\animal\item;
+use App\Animal\animal;
+use App\Animal\AnimalContract;
+use App\Animal\item;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,16 +15,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        app()->singleton(animal::class, function ($app) {
+        app()->singleton(AnimalContract::class, function ($app) {
             if (config('database.gender') === 'female') {
-                return new animal('female');
+                return new Animal('female');
             } else {
-                return new animal('male');
+                return new Animal('male');
             }
 
         });
 
-        app()->singleton(item::class, function ($app) {
+        app()->singleton(Item::class, function ($app) {
             return new item(100);
         });
 

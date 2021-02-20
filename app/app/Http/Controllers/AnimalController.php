@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\animal\discount;
-use App\animal\animal;
+use App\Animal\AnimalContract;
+use App\Animal\Discount;
+use App\Animal\Animal;
 use Illuminate\Http\Request;
-use App\animal\item;
+use App\Animal\item;
 
 class AnimalController extends Controller
 {
-    public function test(discount $discount, animal $animal)
+    public function test(Discount $discount, AnimalContract $animal)
 //    public function test(item $item)
     {
 //        $animal = new animal('male');

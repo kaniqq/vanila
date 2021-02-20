@@ -1,13 +1,13 @@
 <?php
 
 
-namespace App\animal;
+namespace App\Animal;
 
-use App\animal\animal;
+use App\Animal\Animal;
 
-class discount
+class Discount
 {
-    public function __construct(Animal $animal)
+    public function __construct(AnimalContract $animal)
     {
         $this->animal = $animal;
     }
